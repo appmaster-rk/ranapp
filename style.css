@@ -1,0 +1,86 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  background-image: radial-gradient(#eee 1px, transparent 1px);
+  background-size: 20px 20px;
+  color: #333;
+  padding: 0 10px;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(4px);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 30px 10px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #222;
+  letter-spacing: 1px;
+}
+
+/* App list */
+.apps-list h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #444;
+  border-left: 4px solid #ccc;
+  padding-left: 10px;
+}
+
+.apps-list ul {
+  list-style: none;
+}
+
+.apps-list li {
+  margin-bottom: 12px;
+}
+
+.apps-list a {
+  font-size: 1.1rem;
+  color: #0077cc;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 3px;
+  transition: all 0.3s ease;
+}
+
+.apps-list a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background: #0077cc;
+  transition: width 0.3s ease;
+}
+
+.apps-list a:hover::after {
+  width: 100%;
+}
+
+.apps-list a:hover {
+  color: #005fa3;
+}
